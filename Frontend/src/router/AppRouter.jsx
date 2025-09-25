@@ -5,6 +5,7 @@ import RegisterForm from '../components/RegisterForm'
 import LoginForm from '../components/LoginUser'
 import Auth from '../pages/Auth'
 import Seller from '../pages/seller'
+import ProductDetail from '../pages/ProductDetail'
 
 const AppRouter = () => {
   return (
@@ -12,6 +13,7 @@ const AppRouter = () => {
         <Route path="/" element={<Home/>} />
         <Route path='/auth' element={<Auth/>} />
         <Route path='/seller' element={<Seller/>} />
+        <Route path='/productdetail/:id' element={<ProductDetail/>} />
 
 
     </Routes>

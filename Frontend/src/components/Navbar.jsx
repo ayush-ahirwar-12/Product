@@ -10,7 +10,7 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   const { isLoggedIn, user } = useSelector((state) => state.auth);
-  console.log(isLoggedIn,"user-->",user);
+  // console.log(isLoggedIn,"user-->",user);
   
   return (
     <nav className="bg-white shadow-md sticky top-0 z-30">

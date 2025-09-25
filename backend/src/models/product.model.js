@@ -22,12 +22,13 @@ const productSchema = new mongoose.Schema({
     images: [ {
         type: String
     } ],
+    
+    stock: { type: Number, default: 0 },
     seller: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "user",
         required: true
     },
-    stock: { type: Number, default: 0 }
 })
 
 const productModel = mongoose.model("product",productSchema);

@@ -9,7 +9,7 @@ import {
   DollarSign,
   ImageIcon,
 } from "lucide-react";
-// import { createProduct } from "../apis/ProductApis";
+import { createProduct } from "../Apis/ProductApi";
 
 const Seller = () => {
   const [imageFiles, setImageFiles] = useState([]);

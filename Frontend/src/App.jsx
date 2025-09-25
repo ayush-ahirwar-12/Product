@@ -10,7 +10,7 @@ const App = () => {
     (async () => {
       try {
         let me = await axiosInstance.get("/auth/me");
-        console.log(me.data.user);
+        // console.log(me.data.user);
         if (me) {
           dispatch(addUser(me?.data?.user));
         }
